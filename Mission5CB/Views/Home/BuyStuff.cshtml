@@ -12,29 +12,8 @@
     <input type="text" id="rate" name="nonEditableNumber" value="75" readonly>
     <br />
     <label for="cost">Cost:</label>
-    <!-- Display the calculated cost -->
     <input type="text" id="cost" readonly>
     <br />
-    <!-- Button to calculate the cost -->
     <button type="button" onclick="calculateCost()">Calculate Cost</button>
 
-    <!-- Your JavaScript and jQuery code -->
-    <script>
-        // JavaScript function to calculate the cost
-        function calculateCost() {
-            // Get values from input fields
-            var hours = parseFloat($('#hours').val());
-            var rate = parseFloat($('#rate').val());
-
-            // Check if the input is valid
-            if (!isNaN(hours) && !isNaN(rate)) {
-                // Calculate the cost and display it
-                var cost = hours * rate;
-                $('#cost').val(cost.toFixed(2)); // Display the cost with two decimal places
-            } else {
-                alert('Please enter valid numeric values for hours');
-            }
-            return false;
-        }
-    </script>
 </form>
