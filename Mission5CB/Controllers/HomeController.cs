@@ -18,7 +18,7 @@ namespace Mission5CB.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult BuyStuff()
         {
             return View();
         }
